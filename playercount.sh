@@ -29,7 +29,7 @@ while :; do
 
   if [ $PLAYERCOUNT -eq 1 -a $OLDPLAYERCOUNT -eq 0 ]
   then
-    WID=`xdotool search "Factorio" | head -1` #These commands should be in a function. Bash functions scare me.
+    WID=`xdotool search "Factorio" | head -1` #These commands should be in a function.
     xdotool windowactivate --sync $WID
     xdotool key ctrl+space
   fi
